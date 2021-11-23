@@ -1,0 +1,210 @@
+<!--https://www.w3schools.com/-->
+
+
+<!--HTMLの引用と引用の要素
+    この章では、我々は通過します <blockquote>、<q>、<abbr>、<address>、<cite>、および<bdo>HTML要素。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+</body>
+</html>
+
+
+<!--引用のHTML <blockquote>
+    HTML<blockquote>要素は、別のソースから引用されたセクションを定義します。
+    ブラウザは通常、<blockquote>要素をインデントします。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually indent blockquote elements.</p>
+
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by more than one million members in the United States and close to five million globally.
+</blockquote>
+
+</body>
+</html>
+
+
+<!--短い引用のHTML <q>
+    HTML<q>タグは、短い引用を定義します。
+    ブラウザは通常、引用符を引用符で囲みます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Browsers usually insert quotation marks around the q element.</p>
+
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+</body>
+</html>
+
+
+<!--   略語のHTML <abbr> 
+    HTML<abbr>タグは、「HTML」、「CSS」、「Mr。」、「Dr。」、「ASAP」、「ATM」などの略語または頭字語を定義します。
+    略語をマークすると、ブラウザ、翻訳システム、検索エンジンに役立つ情報を提供できます。
+    ヒント：要素の上にマウスを置くと、グローバルタイトル属性を使用して略語/頭字語の説明が表示されます。 
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+
+</body>
+</html>
+
+<!--連絡先情報のHTML <アドレス>
+    HTML<address>タグは、ドキュメントまたは記事の作成者/所有者の連絡先情報を定義します。
+    連絡先情報には、電子メールアドレス、URL、住所、電話番号、ソーシャルメディアハンドルなどがあります。
+    <address>要素内のテキストは通常イタリックで表示され 、ブラウザは常に<address>要素の前後に改行を追加します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+
+<address>
+Written by John Doe.<br> 
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>
+
+</body>
+</html>
+
+<!--
+    HTML<cite>タグは、クリエイティブな作品のタイトル（本、詩、歌、映画、絵画、彫刻など）を定義します。
+    注：人の名前は作品のタイトルではありません。
+    <cite>要素内のテキストは通常、イタリックで表示されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The HTML cite element defines the title of a work.</p>
+<p>Browsers usually display cite elements in italic.</p>
+
+<img src="img_the_scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+</body>
+</html>
+
+<!--双方向オーバーライド用のHTML <bdo>
+    BDOはBi-DirectionalOverrideの略です。
+    HTML<bdo>タグは、現在のテキストの方向を上書きするために使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+
+<bdo dir="rtl">This line will be written from right to left</bdo>
+
+</body>
+</html>
+
+
+<!--コメントを追加
+    コメントを使用すると、HTMLコードに通知とリマインダーを配置できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- This is a comment -->
+<p>This is a paragraph.</p>
+<!-- Comments are not displayed in the browser -->
+
+</body>
+</html>
+
+<!--コンテンツを非表示
+    コメントを使用してコンテンツを非表示にすることができます。
+    コンテンツを一時的に非表示にする場合に役立つ可能性があるのは次のとおりです。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+
+<!-- <p>This is another paragraph </p> -->
+
+<p>This is a paragraph too.</p>
+
+</body>
+</html>
+<!--複数の行を非表示にすることもでき ます。<!--との間のすべて-->が表示から非表示になります。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<!--
+<p>Look at this cool image:</p>
+<img border="0" src="pic_trulli.jpg" alt="Trulli">
+-->
+<p>This is a paragraph too.</p>
+
+</body>
+</html>
+
+<!--インラインコンテンツを非表示
+    コメントを使用して、HTMLコードの途中の部分を非表示にすることができます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This <!-- great text --> is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+
+
+<!---->
+<!---->
+<!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
