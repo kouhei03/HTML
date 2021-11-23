@@ -1,3 +1,8 @@
+
+<!--
+    https://www.w3schools.com/
+-->
+
 <!--
     HTML見出し
     HTML見出しは、<h1>to<h6>タグで定義されます。
@@ -124,47 +129,148 @@ The number of lines in a paragraph depends on the size of the browser window. If
 
 
 <!---->
-<!---->
+<!DOCTYPE html>
+<html>
+<body>
 
-<!---->
-<!---->
+<p>In HTML, spaces and new lines are ignored:</p>
 
-<!---->
-<!---->
+<p>
 
-<!---->
-<!---->
+  My Bonnie lies over the ocean.
 
-<!---->
-<!---->
+  My Bonnie lies over the sea.
 
-<!---->
-<!---->
+  My Bonnie lies over the ocean.
+  
+  Oh, bring back my Bonnie to me.
 
+</p>
+
+</body>
+</html>
+<!--
+    解決策-HTMLの<pre>要素
+    HTML<pre>要素は、フォーマット済みのテキストを定義します。
+<   pre>要素内のテキストは固定幅フォント（通常はCourier）で表示され、スペースと改行の両方が保持されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The pre tag preserves both spaces and line breaks:</p>
+
+<pre>
+   My Bonnie lies over the ocean.
+
+   My Bonnie lies over the sea.
+
+   My Bonnie lies over the ocean.
+   
+   Oh, bring back my Bonnie to me.
+</pre>
+
+</body>
+</html>
+
+<!--
+    HTMLstyle属性は、色、フォント、サイズなどのスタイルを要素に追加するために使用されます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>I am normal</p>
+<p style="color:red;">I am red</p>
+<p style="color:blue;">I am blue</p>
+<p style="font-size:50px;">I am big</p>
+
+</body>
+</html>
+
+<!--
+    CSSbackground-colorプロパティは、HTML要素の背景色を定義します。
+    ページの背景色をpowderblueに設定します。
+-->
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--背景色
+    2つの異なる要素の背景色を設定します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--テキストの色
+    CSScolorプロパティは、HTML要素のテキストの色を定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--フォント
+    CSSfont-familyプロパティは、HTML要素に使用されるフォントを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+<!--文字サイズ
+    CSSfont-sizeプロパティは、HTML要素のテキストサイズを定義します
+-->
 <!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+</body>
+</html>
 
 
+<!--テキストの配置
+    CSStext-alignプロパティは、HTML要素の水平方向のテキスト配置を定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1 style="text-align:center;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
 
-
-
-
-
-
-
-
-
-
-
-<!---->
+</body>
+</html>
