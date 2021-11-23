@@ -96,12 +96,96 @@
 <!--HTML <small>要素
     HTML<small>要素は小さいテキストを定義します：
 -->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is some normal text.</p>
+<p><small>This is some smaller text.</small></p>
+
+</body>
+</html>
+
+
+<!--HTML <mark>要素
+    HTML<mark>要素は、マークまたは強調表示する必要のあるテキストを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+</body>
+</html>
+
+
+<!--HTML <del>要素
+    HTML<del>要素は、ドキュメントから削除されたテキストを定義します。ブラウザは通常、削除されたテキストに線を引きます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>My favorite color is <del>blue</del> red.</p>
+
+</body>
+</html>
+
+<!--HTML <ins>要素
+    HTML<ins>要素は、ドキュメントに挿入されたテキストを定義します。
+    ブラウザは通常、挿入されたテキストに下線を引きます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+</body>
+</html>
+
+<!--HTML <sub>要素
+    HTML<sub>要素は添え字テキストを定義します。下付き文字は通常の線より半分文字下に表示され、
+        小さいフォントで表示されることもあります。
+        添字テキストがHのように、化学式のために使用することができる2 O：
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is <sub>subscripted</sub> text.</p>
+
+</body>
+</html>
+
+<!--HTML <sup>要素
+    HTML<sup>要素は上付きテキストを定義します。上付き文字は通常の線より半分文字上に表示され、
+    小さいフォントで表示されることもあります。上付き文字は、WWW [1]のように脚注に使用できます：
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is <sup>superscripted</sup> text.</p>
+
+</body>
+</html>
+
+<!-- HTMLテキストフォーマット要素
+    Tag	Description
+    <b>	Defines bold text
+    <em>	Defines emphasized text 
+    <i>	Defines a part of text in an alternate voice or mood
+    <small>	Defines smaller text
+    <strong>	Defines important text
+    <sub>	Defines subscripted text
+    <sup>	Defines superscripted text
+    <ins>	Defines inserted text
+    <del>	Defines deleted text
+    <mark>	Defines marked/highlighted text
+-->
+
 <!---->
 <!---->
 <!---->
