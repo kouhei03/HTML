@@ -1,0 +1,290 @@
+<!--https://www.w3schools.com/-->
+
+<!--背景色
+    HTML要素の背景色を設定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+
+</body>
+</html>
+<!--テキストの色
+    テキストの色を設定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+</body>
+</html>
+
+
+<!--ボーダの色
+    境界線の色を設定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+
+</body>
+</html>
+
+
+<!--色の値
+    HTMLでは、RGB値、HEX値、HSL値、RGBA値、およびHSLA値を使用して色を指定することもできます。
+    次の3つの<div>要素の背景色は、RGB、HEX、およびHSL値で設定されています。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Same as color name "Tomato":</p>
+
+<h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Same as color name "Tomato", but 50% transparent:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+</body>
+</html>
+
+<!--RGBカラー値
+    HTMLでは、次の式を使用して、色をRGB値として指定できます。rgb（赤、 緑、青）
+    各パラメーター（赤、緑、青）は、0〜255の値で色の強度を定義します。
+    これは、256 x 256 x 256 = 16777216の可能な色があることを意味します。
+    たとえば、赤は最大値（255）に設定され、他の2つ（緑と青）は0に設定されているため、rgb（255、0、0）は赤として表示されます。
+    別の例では、緑が最大値（255）に設定され、他の2つ（赤と青）が0に設定されているため、rgb（0、255、0）は緑として表示されます。
+    黒を表示するには、rgb（0、0、0）のように、すべてのカラーパラメータを0に設定します。
+    白を表示するには、rgb（255、255、255）のように、すべてのカラーパラメータを255に設定します。
+    以下のRGB値を組み合わせて実験してください。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1>
+<h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1>
+<h1 style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h1>
+<h1 style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h1>
+<h1 style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h1>
+<h1 style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h1>
+
+</body>
+</html>
+
+
+<!--灰色の色合い
+    グレーの色合いは、多くの場合、3つのパラメーターすべてに等しい値を使用して定義されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h1>
+<h1 style="background-color:rgb(100, 100, 100);">rgb(100, 100, 100)</h1>
+<h1 style="background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h1>
+<h1 style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h1>
+<h1 style="background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h1>
+<h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h1>
+
+</body>
+</html>
+
+
+<!--
+    RGBAカラー値は、アルファチャネルを使用したRGBカラー値の拡張です。これは、カラーの不透明度を指定します。
+    RGBAカラー値は次のように指定されます。    rgba（赤、 緑、青、アルファ）
+    alphaパラメーターは、0.0（完全に透過的）から1.0（まったく透過的ではない）までの数値です。
+    以下のRGBA値を組み合わせて実験してください。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+<h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+
+</body>
+</html>
+
+
+<!--HEXカラー値
+    HTMLでは、次の形式の16進値を使用して色を指定できます。＃RRGGBB
+    ここで、rr（赤）、gg（緑）、およびbb（青）は、00からffまでの16進値です（10進数の0から255と同じ）。
+    たとえば、赤は最大値（ff）に設定され、他の2つ（緑と青）は00に設定されているため、＃ff0000は赤として表示されます。
+    別の例では、緑が最大値（ff）に設定され、他の2つ（赤と青）が00に設定されているため、＃00ff00は緑として表示されます。
+    黒を表示するには、次のようにすべての色パラメータを00に設定します：＃000000。
+    白を表示するには、次のようにすべての色パラメータをffに設定します：#ffffff。
+    以下のHEX値を混合して実験してください。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:#ff0000;">#ff0000</h1>
+<h1 style="background-color:#0000ff;">#0000ff</h1>
+<h1 style="background-color:#3cb371;">#3cb371</h1>
+<h1 style="background-color:#ee82ee;">#ee82ee</h1>
+<h1 style="background-color:#ffa500;">#ffa500</h1>
+<h1 style="background-color:#6a5acd;">#6a5acd</h1>
+
+</body>
+</html>
+
+<!--灰色の色合い
+    グレーの色合いは、多くの場合、3つのパラメーターすべてに等しい値を使用して定義されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:#404040;">#404040</h1>
+<h1 style="background-color:#686868;">#686868</h1>
+<h1 style="background-color:#a0a0a0;">#a0a0a0</h1>
+<h1 style="background-color:#bebebe;">#bebebe</h1>
+<h1 style="background-color:#dcdcdc;">#dcdcdc</h1>
+<h1 style="background-color:#f8f8f8;">#f8f8f8</h1>
+
+</body>
+</html>
+
+<!--HSLカラー値
+    HSLは、色相、彩度、明度の略です。
+    HSLAカラー値は、アルファチャネル（不透明度）を備えたHSLの拡張です。
+    HSLカラー値
+    HTMLでは、色は次の形式で色相、彩度、明度（HSL）を使用して指定できます。
+    hsl（色相、彩度、明るさ）
+    色相は、0から360までのカラーホイールの次数です。0は赤、120は緑、240は青です。
+    彩度はパーセンテージ値、0％は灰色の陰影、100％はフルカラーを意味します。
+    明度もパーセンテージ値で、0％は黒、100％は白です。
+    以下のHSL値を混合して実験してください。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+<h1 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h1>
+<h1 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h1>
+<h1 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h1>
+<h1 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h1>
+
+</body>
+</html>
+
+
+
+<!--飽和
+    彩度は、色の強さとして説明できます。
+100％は純粋な色で、グレーの色合いはありません
+50％は50％グレーですが、それでも色を確認できます。
+0％は完全に灰色で、色が見えなくなります。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h1>
+<h1 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h1>
+<h1 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h1>
+<h1 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h1>
+<h1 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h1>
+
+<p>With HSL colors, less saturation mean less color. 0% is completely gray.</p>
+
+</body>
+</html>
+
+
+<!--軽さ
+    色の明度は、色に与える光の量として説明できます。0％は光がない（黒）
+    、50％は50％の光（暗くも明るくもない）、100％は完全な明度（白）を意味します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h1>
+<h1 style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h1>
+<h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+<h1 style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h1>
+<h1 style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h1>
+<h1 style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h1>
+
+<p>With HSL colors, 0% lightness means black, and 100 lightness means white.</p>
+
+</body>
+</html>
+
+
+<!--灰色の色合い
+    グレーの色合いは、多くの場合、色相と彩度を0に設定し、明度を0％から100％に調整して、
+    より暗い/より明るい色合いにすることで定義されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h1>
+<h1 style="background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h1>
+<h1 style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h1>
+<h1 style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h1>
+<h1 style="background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h1>
+<h1 style="background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h1>
+
+</body>
+</html>
+
+
+<!--HSLAカラー値
+    HSLAカラー値は、アルファチャネルを使用したHSLカラー値の拡張です。これは、カラーの不透明度を指定します。
+    HSLAカラー値は次のように指定されます。
+    hsla（色相、 彩度、明るさ、アルファ）
+    alphaパラメーターは、0.0（完全に透過的）から1.0（まったく透過的ではない）までの数値です。
+    以下のHSLA値を混合して実験してください。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h1>
+
+</body>
+</html>
+
