@@ -1,0 +1,236 @@
+<!--https://www.w3schools.com/-->
+
+<!--インラインCSS
+    インラインCSSは、単一のHTML要素に一意のスタイルを適用するために使用されます。
+    インラインCSSは、styleHTML要素の属性を使用します。
+    次の例では、<h1>要素のテキストの色を青に設定し、要素のテキストの色<p>を赤に設定します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+
+</body>
+</html>
+
+<!--内部CSS
+    内部CSSは、単一のHTMLページのスタイルを定義するために使用されます。
+    内部CSSは<head>、<style>要素内のHTMLページのセクションで定義されます。
+    次の例では、<h1>（そのページの）すべての<p>要素のテキストの色を青に設定し、
+    すべての要素のテキストの色を赤に設定します。さらに、ページは「パウダーブルー」の背景色で表示されます。 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--外部CSS
+    外部スタイルシートは、多くのHTMLページのスタイルを定義するために使用されます。  
+    外部スタイルシートを使用するには<head>、各HTMLページのセクションに外部スタイルシートへのリンクを追加します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--
+    外部スタイルシートは、任意のテキストエディタで記述できます。ファイルにはHTMLコードが含まれていてはならず、.css拡張子を付けて保存する必要があります。
+    「styles.css」ファイルは次のようになります。
+-->
+<!--"styles.css"：
+    body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+-->
+<!--CSSの色、フォント、サイズ
+    ここでは、一般的に使用されるいくつかのCSSプロパティを示します。それらについては後で詳しく説明します。
+    CSScolorプロパティは、使用するテキストの色を定義します。
+    CSSfont-familyプロパティは、使用するフォントを定義します。
+    CSSfont-sizeプロパティは、使用するテキストサイズを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--CSSボーダー
+    CSSborderプロパティは、HTML要素の周囲の境界線を定義します。
+    ヒント：ほぼすべてのHTML要素の境界線を定義できます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+<!--CSSパディング
+    CSSpaddingプロパティは、テキストと境界線の間のパディング（スペース）を定義します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--CSSマージン
+    CSSmarginプロパティは、境界線の外側のマージン（スペース）を定義します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  border: 2px solid powderblue;
+  margin: 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!--外部CSSへのリンク
+    外部スタイルシートは、完全なURLまたは現在のWebページからの相対パスで参照できます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+<!----------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/html/styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+<!----------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+<!--章のまとめ
+styleインラインスタイリングにHTML属性を使用する
+HTML<style>要素を使用して内部CSSを定義する
+HTML<link>要素を使用して外部CSSファイルを参照する
+HTML<head>要素を使用して<style>要素と<link>要素を保存します
+colorテキストの色にはCSSプロパティを使用します
+font-familyテキストフォントにはCSSプロパティを使用します
+font-sizeテキストサイズにはCSSプロパティを使用します
+border境界線にはCSSプロパティを使用します
+padding境界線内のスペースにはCSSプロパティを使用します
+margin境界線の外側のスペースにはCSSプロパティを使用します
+-->
