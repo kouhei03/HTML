@@ -1,0 +1,102 @@
+<!--
+    HTML見出し
+    HTML見出しは、<h1>to<h6>タグで定義されます。
+    <h1>最も重要な見出しを定義します。<h6>最も重要度の低い見出しを定義します。
+
+    見出しは重要です
+    検索エンジンは、見出しを使用してWebページの構造とコンテンツにインデックスを付けます。
+    ユーザーは、見出しでページをざっと読むことがよくあります。見出しを使用してドキュメントの構造を示すことが重要です。
+    <h1>見出しは、メインの見出しに使用し<h2>、次に見出し、次に重要度の低い ものなどを使用する必要があります<h3>。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+</body>
+</html>
+
+<!--各HTML見出しにはデフォルトのサイズがあります。ただし、styleCSSfont-sizeプロパティを使用して、
+    属性を使用して任意の見出しのサイズを指定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="font-size:60px;">Heading 1</h1>
+
+<p>You can change the size of a heading with the style attribute, using the font-size property.</p>
+
+</body>
+</html>
+
+
+<!---->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---->
