@@ -1,0 +1,354 @@
+<!--https://www.w3schools.com/-->
+
+<!--HTMLリンク-構文
+    HTML<a>タグはハイパーリンクを定義します。構文は次のとおりです。
+    要素の最も重要な属性は、リンクの宛先を示す属性です。<a> href
+    リンクテキストは、読み手に見えるであろう部分です。
+    リンクテキストをクリックすると、指定したURLアドレスにリーダーが送信されます。
+    この例は、W3Schools.comへのリンクを作成する方法を示しています。
+
+    デフォルトでは、リンクはすべてのブラウザで次のように表示されます。
+
+    未訪問のリンクには下線が引かれ、青色になっています
+    訪問したリンクには下線が引かれ、紫色になっています
+    アクティブなリンクには下線が引かれ、赤で表示されます
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>HTML Links</h1>
+
+<p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+
+</body>
+</html>
+
+
+<!--HTMLリンク-ターゲット属性
+    デフォルトでは、リンクされたページは現在のブラウザウィンドウに表示されます。これを変更するには、リンクの別のターゲットを指定する必要があります。
+    このtarget属性は、リンクされたドキュメントを開く場所を指定します。
+    target属性には、次のいずれかの値を持つことができます。
+    _self- ディフォルト。クリックしたときと同じウィンドウ/タブでドキュメントを開きます
+    _blank -ドキュメントを新しいウィンドウまたはタブで開きます
+    _parent -親フレームでドキュメントを開きます
+    _   top -ウィンドウ全体でドキュメントを開きます
+    target = "_ blank"を使用して、リンクされたドキュメントを新しいブラウザウィンドウまたはタブで開きます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The target Attribute</h2>
+
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+<p>If target="_blank", the link will open in a new browser window or tab.</p>
+
+</body>
+</html>
+
+
+<!--絶対URLと相対URL
+    上記の両方の例では、属性に絶対URL（完全なWebアドレス）を使用していhrefます。
+    ローカルリンク（同じWebサイト内のページへのリンク）は、相対URL（「https：// www」の部分なし）で指定されます 。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+</body>
+</html>
+
+
+<!--HTMLリンク-画像をリンクとして使用する
+    画像をリンクとして使用するには、<img> タグをタグ内に配置するだけ<a>です
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image as a Link</h2>
+
+<p>The image below is a link. Try to click on it.</p>
+
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+</body>
+</html>
+
+<!--メールアドレスへのリンク
+    属性 mailto:内で使用して、 hrefユーザーの電子メールプログラムを開
+    くリンクを作成します（ユーザーが新しい電子メールを送信できるようにするため）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Link to an Email Address</h2>
+
+<p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+
+<p><a href="mailto:someone@example.com">Send email</a></p>
+
+</body>
+</html>
+
+<!--リンクとしてのボタン
+    HTMLボタンをリンクとして使用するには、JavaScriptコードを追加する必要があります。
+    JavaScriptを使用すると、ボタンのクリックなど、特定のイベントで何が発生するかを指定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Button as a Links</h2>
+
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+</body>
+</html>
+
+
+<!--リンクタイトル
+    このtitle属性は、要素に関する追加情報を指定します。ほとんどの場合、
+    情報は、マウスが要素上を移動したときにツールチップテキストとして表示されます。
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h2>Link Titles</h2>
+<p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+</body>
+</html>
+
+<!--絶対URLと相対URLの詳細
+    完全なURLを使用してWebページにリンクします。 
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External Paths</h2>
+
+<p>This example uses a full URL to link to a web page:</p>
+<p><a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a></p>
+
+</body>
+</html>
+
+<!----------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the html folder on the current web site:</p>
+
+<p><a href="/html/default.asp">HTML tutorial</a></p>
+
+</body>
+</html>
+<!----------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>External Paths</h2>
+
+<p>This example links to a page located in the same folder as the current page:</p>
+
+<p><a href="default.asp">HTML tutorial</a></p>
+
+</body>
+</html>
+
+
+
+<!--章のまとめ
+使用する<a>リンクを定義するための要素を
+使用するhrefリンクアドレスを定義する属性を
+target属性を使用して、リンクされたドキュメントを開く場所を定義します
+使用<img>要素（内側の<a>リンクとして画像を使用します）
+属性 mailto:内のスキームを使用して href、ユーザーの電子メールプログラムを開くリンクを作成します
+-->
+
+
+<!--HTMLリンクの色
+    デフォルトでは、リンクは次のように表示されます（すべてのブラウザで）。
+    未訪問のリンクには下線が引かれ、青色になっています
+    訪問したリンクには下線が引かれ、紫色になっています
+    アクティブなリンクには下線が引かれ、赤で表示されます
+    
+    CSSを使用して、リンク状態の色を変更できます。
+    ここでは、未訪問のリンクは下線のない緑色になります。訪問したリンクはピンク色になり、
+    下線は表示されません。アクティブなリンクは黄色で下線が引かれます。
+    さらに、リンク（a：hover）にマウスを合わせると、赤くなり、下線が引かれます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Colors</h2>
+
+<p>You can change the default colors of links</p>
+
+<a href="html_images.asp" target="_blank">HTML Images</a> 
+
+</body>
+</html>
+
+<!--リンクボタン
+    CSSを使用して、リンクをボタンとしてスタイル設定することもできます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="default.asp" target="_blank">This is a link</a>
+
+</body>
+</html>
+
+<!--HTMLでブックマークを作成する
+    ブックマークは、Webページが非常に長い場合に役立ちます。
+    ブックマークを作成するには-最初にブックマークを作成してから、それにリンクを追加します。
+    リンクをクリックすると、ページはブックマークのある場所まで上下にスクロールします。
+    まず、id属性を使用してブックマークを作成します。
+    次に、同じページ内からブックマークへのリンクを追加します（「第4章にジャンプ」）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+</body>
+</html>
+
