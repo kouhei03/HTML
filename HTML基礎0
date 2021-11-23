@@ -1,0 +1,280 @@
+<!--　https://www.w3schools.com/
+    HTMLはハイパーテキストマークアップ言語の略です
+HTMLは、Webページを作成するための標準のマークアップ言語です。
+HTMLはWebページの構造を記述します
+HTMLは一連の要素で構成されています
+HTML要素は、コンテンツの表示方法をブラウザに指示します
+HTML要素は、「これは見出しです」、「これは段落です」、
+「これはリンクです」などのコンテンツにラベルを付けます。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+<!-----------------------------------------------------------
+<!DOCTYPE html>この文書は、HTML5文書である宣言定義
+この<html>要素は、HTMLページのルート要素です。
+この<head>要素には、HTMLページに関するメタ情報が含まれています
+この<title>要素は、HTMLページのタイトルを指定します
+（ブラウザーのタイトルバーまたはページのタブに表示されます）。
+この<body>要素はドキュメントの本文を定義し、見出し、段落、画像、
+ハイパーリンク、表、リストなど、表示されているすべてのコンテンツのコンテナです。
+<h1>要素は、大きな見出しを定義します
+<p>要素は段落を定義します
+-->
+<!--
+    すべてのHTMLドキュメントは、ドキュメント型宣言で始まる必要があります<!DOCTYPE html>。
+     HTMLドキュメント自体は、<html>で始まり、で終わり</html>ます。
+     HTML文書の可視部分は、間にある<body>と</body>。
+
+     <！DOCTYPE>宣言
+    <!DOCTYPE>宣言は、ドキュメントの種類を表し、正しく表示Webページにブラウザを支援します。
+    ページの上部（HTMLタグの前）に1回だけ表示する必要があります。
+    <!DOCTYPE>宣言は大文字と小文字を区別しません。
+------------------------------------------------------------->
+
+<!-- HTML見出し
+  HTML見出しは、<h1>to<h6>タグで定義されます。
+  <h1>最も重要な見出しを定義します。<h6>最も重要度の低い見出しを定義します。 
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
+<h6>This is heading 6</h6>
+
+</body>
+</html>
+
+<!--
+HTML段落は、次の<p>タグで定義されます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+
+<!--
+    HTMLリンクは、次の<a>タグで定義されます
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Links</h2>
+<p>HTML links are defined with the a tag:</p>
+
+<a href="https://www.w3schools.com">This is a link</a>
+
+</body>
+</html>
+
+<!--
+    HTML画像は<img>タグで定義されます。
+    ソースファイル（src）、代替テキスト（alt） 、、、widthおよび
+    heightは属性として提供されます。
+    ※画像はHTMLファイルと同じ場所に格納すること
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Images</h2>
+<p>HTML images are defined with the img tag:</p>
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+
+</body>
+</html>
+
+<!--
+    終了タグを忘れた場合でも、一部のHTML要素は正しく表示されます。
+-->
+<!DOCTYPE html>
+<html>
+<body> 
+
+<p>This is a paragraph.
+<p>This is a paragraph.
+
+</body>
+</html>
+
+<!--コンテンツのないHTML要素は空の要素と呼ばれます。
+　　<br>タグは、改行を定義し、終了タグなしの空の要素です。
+　　
+　　HTMLタグでは、大文字と小文字は区別されません。<P>は、と同じ意味<p>です。
+　　HTML標準では小文字のタグは必要ありませんが、W3C ではHTMLで小文字を使用することを推奨しており、
+XHTMLなどのより厳密なドキュメントタイプでは小文字を要求しています。
+-->
+<!DOCTYPE html>
+<html>
+<body> 
+
+<p>This is a <br> paragraph with a line break.</p>
+
+</body>
+</html>
+
+<!--
+    HTML属性
+    すべてのHTML要素は属性を持つことができます
+    属性は、要素に関する追加情報を提供します
+    属性は常に開始タグで指定されます
+    属性は通常、name = "value"のような名前と値のペアで提供されます。
+-->
+
+<!--
+    <a>タグは、ハイパーリンクを定義します。この href属性は、
+    リンク先のページのURLを指定します。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The href Attribute</h2>
+
+<p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
+
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+</body>
+</html>
+
+
+<!--
+    幅と高さの属性
+    <img>タグは含むべきである widthと height（ピクセル）の画像の幅と高さを指定する属性を、：
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Width and Height Attributes</h2>
+
+<p>The width and height attributes of the img tag, defines the width and height of the image:</p>
+
+<img src="img_girl.jpg" width="500" height="600">
+
+</body>
+</html>
+
+<!--
+    alt属性
+    タグの必須alt属性は、<img>何らかの理由で画像を表示できない場合に、画像の代替テキストを指定します。
+    これは、接続が遅いか、src属性のエラーが原因であるか、ユーザーがスクリーンリーダーを使用していることが原因である可能性があります。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The alt Attribute</h2>
+<p>The alt attribute should reflect the image content, so users who cannot see the image gets an understanding of what the image contains:</p>
+
+<img src="img_girl.jpg" alt="Girl with a jacket" width="500" height="600">
+
+</body>
+</html>
+
+<!--
+    スタイル属性
+    このstyle属性は、色、フォント、サイズなどのスタイルを要素に追加するために使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The style Attribute</h2>
+<p>The style attribute is used to add styles to an element, such as color:</p>
+
+<p style="color:red;">This is a red paragraph.</p>
+
+</body>
+</html>
+
+
+<!--
+    lang属性
+    Webページの言語を宣言するには、常にタグlang内に属性を含める必要があり<html>ます。
+    これは、検索エンジンとブラウザを支援することを目的としています。
+    次の例では、言語として英語を指定しています。
+-->
+
+<!--
+    lang属性
+    Webページの言語を宣言するには、常にタグlang内に属性を含める必要があり<html>ます。
+    これは、検索エンジンとブラウザを支援することを目的としています。
+    次の例では、言語として英語を指定しています。
+    lang 属性の言語コードに国コードを追加することもできます。したがって、最初の2文字はHTMLページの言語を定義し、最後の2文字は国を定義します。
+    次の例では、言語として英語を指定し、国として米国を指定しています。
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+...
+</body>
+</html>
+
+<!--
+    タイトル属性
+    このtitle属性は、要素に関するいくつかの追加情報を定義します。
+    要素の上にマウスを置くと、title属性の値がツールチップとして表示されます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 title="I'm a header">The title Attribute</h2>
+
+<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+
+</body>
+</html>
+
+<!--
+    一重引用符または二重引用符？
+    HTMLでは、属性値を二重引用符で囲むのが最も一般的ですが、一重引用符も使用できます。
+    状況によっては、属性値自体に二重引用符が含まれている場合、一重引用符を使用する必要があります。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Single or Double Quotes?</h2>
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+<p>Move your mouse over the paragraphs below to see the effect:</p>
+
+<p title='John "ShotGun" Nelson'>John with double quotes</p>
+<p title="John 'ShotGun' Nelson">John with single quotes</p>
+
+</body>
+</html>
+
+
