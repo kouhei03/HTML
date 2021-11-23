@@ -1,0 +1,113 @@
+
+
+<!--https://www.w3schools.com/-->
+
+<!--HTMLテキストのフォーマット
+    HTMLには、特別な意味を持つテキストを定義するためのいくつかの要素が含まれています
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><b>This text is bold</b></p>
+<p><i>This text is italic</i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+
+</body>
+</html>
+
+<!--
+    HTMLフォーマット要素
+    書式設定要素は、特殊なタイプのテキストを表示するように設計されています。
+        <b> - 太字
+        <strong> -重要なテキスト
+        <i> -斜体のテキスト
+        <em> -強調されたテキスト
+        <mark> -マークされたテキスト
+        <small> -小さいテキスト
+        <del> -削除されたテキスト
+        <ins> -挿入されたテキスト
+        <sub> -添え字テキスト
+        <sup> -上付きテキスト
+-->
+
+
+<!--HTMLの<b>および<strong>要素
+    HTML<b>要素は、特に重要なことなく、太字のテキストを定義します
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><b>This text is bold.</b></p>
+
+</body>
+</html>
+
+<!--HTMLの<b>および<strong>要素
+    HTML<strong>要素は、非常に重要なテキストを定義します。内部のコンテンツは通常、太字で表示されます
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><strong>This text is important!</strong></p>
+
+</body>
+</html>
+
+
+<!--
+    HTML<i>要素は、テキストの一部を別の声またはムードで定義します。内部のコンテンツは通常、斜体で表示されます。
+    ヒント：<i>タグは、多くの場合など、他の言語、思考、船名、からフレーズ、専門用語を示すために使用されます
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><i>This text is italic.</i></p>
+
+</body>
+</html>
+
+
+<!--
+    HTML<em>要素は、強調されたテキストを定義します。内部のコンテンツは通常、斜体で表示されます。
+    ヒント：スクリーンリーダーは、言葉<em> による強勢を使用して、単語を強調して発音します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><em>This text is emphasized.</em></p>
+
+</body>
+</html>
+
+
+<!--HTML <small>要素
+    HTML<small>要素は小さいテキストを定義します：
+-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
