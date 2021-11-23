@@ -50,10 +50,78 @@
 </html>
 
 
-<!---->
+<!--
+    HTML表示
+    HTMLがどのように表示されるかはわかりません。
+    大画面または小画面、およびサイズ変更されたウィンドウは、異なる結果を作成します。
+    HTMLでは、HTMLコードにスペースや行を追加して表示を変更することはできません。
+    ページが表示されると、ブラウザは余分なスペースと行を自動的に削除します。
 
-<!---->
-<!---->
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser 
+ignores it.
+</p>
+
+<p>
+This paragraph
+contains      a lot of spaces
+in the source     code,
+but the    browser 
+ignores it.
+</p>
+
+<p>
+The number of lines in a paragraph depends on the size of the browser window. If you resize the browser window, the number of lines in this paragraph will change.
+</p>
+
+</body>
+</html>
+
+
+<!--
+    HTMLの水平方向のルール
+    <hr>タグは、HTMLページのテーマの区切りを定義し、ほとんどの場合、水平方向のルールとして表示されます。
+    この<hr>要素は、HTMLページのコンテンツを区切る（または変更を定義する）ために使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+
+</body>
+</html>
+<!--
+    HTMLの改行
+    HTML<br>要素は改行を定義します。
+    <br>新しい段落を開始せずに改行（改行）が必要な場合に使用します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is<br>a paragraph<br>with line breaks.</p>
+
+</body>
+</html>
+
 
 <!---->
 <!---->
