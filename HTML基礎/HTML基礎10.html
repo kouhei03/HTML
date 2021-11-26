@@ -45,52 +45,220 @@ background image behaves.
 </html>
 
 
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<!--
+    次<style> の<head> セクションで、要素の背景画像を指定することもできます。
+    <style> 要素に背景画像を指定します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-image: url('mouse.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Image</h2>
+
+<div>
+You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.
+</div>
+
+</body>
+</html>
+
+<!--ページの背景画像
+    ページ全体に背景画像を含める場合は、<body>要素に背景画像を指定する必要があります。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mouse.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Image</h2>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+
+</body>
+</html>
+
+<!--バックグラウンドリピート
+    背景画像が要素よりも小さい場合、画像は要素の最後に到達するまで、水平方向と垂直方向に繰り返されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mouse.jpg');
+}
+</style>
+</head>
+<body>
+
+<h2>Background Repeat</h2>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+
+</body>
+</html>
 
 
-<!---->
+<!--
+    背景画像が繰り返されないようにするには、background-repeatプロパティをに設定しますno-repeat。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mouse.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
 
-<!----><!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<h2>Background No Repeat</h2>
+
+<p>You can avoid the image from being repeated by setting the background-repeat property to "no-repeat".</p>
+
+</body>
+</html>
 
 
-<!---->
+<!--背景カバー
+    背景画像で要素全体をカバーする場合は、background-sizeプロパティを次のように 設定できます。cover.
+    また、要素全体が常にカバーされるようにするには、background-attachmentプロパティを次のように設定し ます。fixed:
+    このように、背景画像はストレッチなしで要素全体をカバーします（画像は元の比率を維持します）：
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mouse.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
 
-<!----><!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<h2>Background Cover</h2>
+
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
+
+</body>
+</html>
 
 
-<!---->
+<!--
+    要素全体に合わせて背景画像を拡大する場合は、background-sizeプロパティを 100% 100%次のように設定できます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('mouse.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
 
-<!---->
+<h2>Background Stretch</h2>
 
-<!---->
+<p>Set the background-size property to "100% 100%" and the background image will be stretched to cover the entire element, in this case the body element.</p>
 
-<!---->
+</body>
+</html>
+
+
+<!--HTMLの<picture>要素
+    HTML<picture>要素により、Web開発者は画像リソースをより柔軟に指定できます。
+    <picture>要素は、一個の以上含ま<source>要素を介して異なる画像を参照し、各srcset 属性。このようにして、ブラウザは現在のビューやデバイスに最適な画像を選択できます。
+    各<source>要素にはmedia、画像が最適な時期を定義する属性があり ます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="mouse.jpg">
+  <source media="(min-width: 465px)" srcset="mouse.jpg">
+  <img src="mouse.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+
+</body>
+</html>
+
+<!--
+    いつPictureElementを使用するか
+    この<picture>要素には、主に2つの目的があります。
+
+ 1.帯域幅
+    画面やデバイスが小さい場合は、大きな画像ファイルをロードする必要はありません。
+    ブラウザは、<source> 属性値が一致する最初の要素を使用し、次の要素を無視します。
+
+2.フォーマットのサポート
+    一部のブラウザまたはデバイスは、すべての画像形式をサポートしていない場合があります。
+    この<picture>要素を使用する と、すべての形式の画像を追加できます。ブラウザは、認識した最初の形式を使用し、次の要素を無視します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source srcset="mouse.jpg">
+  <source srcset="mouse.jpg">
+  <img src="mouse.jpg" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+
+</body>
+</html>
