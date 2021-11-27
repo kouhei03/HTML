@@ -1,0 +1,297 @@
+
+
+<!--https://www.w3schools.com/-->
+
+<!--HTMLブロックとインライン要素
+    すべてのHTML要素には、要素のタイプに応じて、デフォルトの表示値があります。
+    ブロックとインラインの2つの表示値があります。
+-->
+<!--ブロックレベルの要素
+    ブロックレベルの要素は常に新しい行から始まります。
+    ブロックレベルの要素は、常に使用可能な幅全体を占めます（可能な限り左右に伸びます）。
+    ブロックレベルの要素には上マージンと下マージンがありますが、インライン要素にはありません。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="border: 1px solid black">Hello World</div>
+
+<p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+</body>
+</html>
+
+
+<!--インライン要素
+    インライン要素は新しい行から始まりません。
+    インライン要素は、必要なだけの幅を取ります。
+    これは、段落内の<span>要素です。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+
+</body>
+</html>
+
+
+
+<!--<div>要素
+    この<div>要素は、他のHTML要素のコンテナとしてよく使用されます。
+    <div>要素には属性は必要ありませんが、しているstyle、classとid共通しています。
+    CSSと一緒に使用すると、<div>要素を使用してコンテンツのブロックのスタイルを設定できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+</div> 
+
+</body>
+</html>
+
+
+<!--<span>要素
+    この<span>要素は、テキストの一部またはドキュメントの一部をマークアップするために使用されるインラインコンテナです。
+    <span>要素には属性は必要ありませんが、しているstyle、classとid共通しています。
+    CSSと一緒に使用すると、<span>要素を使用してテキストの一部のスタイルを設定できます。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The span element</h1>
+
+<p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold">dark green</span> eyes.</p>
+
+</body>
+</html>
+
+
+<!--章のまとめ
+    ブロックとインラインの2つの表示値があります
+    ブロックレベルの要素は常に新しい行で始まり、使用可能な全幅を占めます
+    インライン要素は新しい行で開始せず、必要なだけの幅を使用します
+    この<div>要素はブロックレベルであり、他のHTML要素のコンテナとしてよく使用されます。
+    この<span>要素は、テキストの一部またはドキュメントの一部をマークアップするために使用されるインラインコンテナです。
+-->
+
+<!--HTMLクラス属性
+    HTMLclass属性は、HTML要素のクラスを指定するために使用されます。
+    複数のHTML要素が同じクラスを共有できます。
+-->
+
+<!--クラス属性の使用
+        このclass属性は、スタイルシートのクラス名を指すためによく使用されます。
+        また、JavaScriptで使用して、特定のクラス名を持つ要素にアクセスして操作することもできます。
+        次の例では、「city」の値<div>を持つclass属性を持つ3つの要素があります。
+        3つの<div> 要素はすべて.city 、ヘッドセクションのスタイル定義に従って均等にスタイル設定されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="city">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+<div class="city">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="city">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+</body>
+</html>
+
+
+<!--
+    次の例では、値が「note」の属性を持つ2つの<span>要素がありclassます。
+    両方の<span> 要素は.note 、ヘッドセクションのスタイル定義に従って等しくスタイル設定されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.note {
+  font-size: 120%;
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>My <span class="note">Important</span> Heading</h1>
+<p>This is some <span class="note">important</span> text.</p>
+
+</body>
+</html>
+
+
+
+<!--クラスの構文
+    クラスを作成するには; ピリオド（。）文字を記述し、その後にクラス名を記述します。
+    次に、中括弧{}内でCSSプロパティを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>The class Attribute</h2>
+<p>Use CSS to style elements with the class name "city":</p>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+
+<!--複数のクラス
+    HTML要素は複数のクラスに属することができます。
+    複数のクラスを定義するには、クラス名をスペースで区切ります（例：<div class = "city main">）。要素は、指定されたすべてのクラスに従ってスタイル設定されます。
+    次の例では、最初の<h2>要素は cityクラスとクラスの両方に属し、両方のクラスmainからCSSスタイルを取得します。 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Multiple Classes</h2>
+<p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class, which center-aligns the text.</p>
+
+<h2 class="city main">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+</body>
+</html>
+
+<!--異なる要素が同じクラスを共有できます
+    異なるHTML要素が同じクラス名を指す場合があります。
+    次の例では、両方<h2>と<p> し、「街」クラスへのポイントは、同じスタイルを共有します：
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Different Elements Can Share Same Class</h2>
+
+<p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+
+<h2 class="city">Paris</h2>
+<p class="city">Paris is the capital of France.</p>
+
+</body>
+</html>
+
+
+
+<!--JavaScriptでのクラス属性の使用
+    クラス名は、JavaScriptで使用して、特定の要素に対して特定のタスクを実行することもできます。
+    JavaScriptは、次のgetElementsByClassName()メソッドを使用して特定のクラス名を持つ要素にアクセスできます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+<!--章のまとめ
+    HTMLclass属性は、要素の1つ以上のクラス名を指定します
+    クラスは、特定の要素を選択してアクセスするためにCSSとJavaScriptによって使用されます
+    このclass属性は、任意のHTML要素で使用できます
+    クラス名では大文字と小文字が区別されます
+    異なるHTML要素が同じクラス名を指すことができます
+    JavaScriptは、getElementsByClassName() メソッドを使用して特定のクラス名を持つ要素にアクセスできます
+-->
+
+
+
