@@ -1,0 +1,354 @@
+
+
+<!--https://www.w3schools.com/-->
+
+<!--
+    HTMLテーブルを使用すると、Web開発者はデータを行と列に配置できます。
+    Company	Contact	Country
+    Alfreds Futterkiste	Maria Anders	Germany
+    Centro comercial Moctezuma	Francisco Chang	Mexico
+    Ernst Handel	Roland Mendel	Austria
+    Island Trading	Helen Bennett	UK
+    Laughing Bacchus Winecellars	Yoshi Tannamuri	Canada
+    Magazzini Alimentari Riuniti	Giovanni Rovelli	Italy
+    -->
+
+<!--
+    HTMLのテーブルは、行と列内のテーブルセルで構成されます
+-->
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid blue;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To undestand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+<!--折りたたまれたテーブルの境界線
+  上記の例のように二重の境界線が表示されないようにするには、CSSborder-collapse プロパティをに設定しcollapseます。
+  これにより、境界線が1つの境界線に折りたたまれます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Collapsed Borders</h2>
+<p>If you want the borders to collapse into one border, add the CSS border-collapse property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<!--スタイルテーブルの境界線
+  各セルの背景色を設定し、境界線を白色（ドキュメントの背景と同じ）にすると、境界線が見えない印象になります。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Invisible Borders</h2>
+
+<p>Style the table with white borders and a background color of the cells to make the impression of invisible borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--ラウンドテーブルの境界線
+  border-radius財産、境界は丸みを帯びた角を取得します：
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS border-radius property to add rounded corners to the borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<!--ラウンドテーブルの境界線
+  border-radius財産、境界は丸みを帯びた角を取得します：
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS border-radius property to add rounded corners to the borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--
+  tablecssセレクターから除外して、テーブルの周囲の境界線をスキップします。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS border-radius property to add rounded corners to the table cells.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--点線のテーブルの境界線
+  border-style財産、あなたはボーダーのappereanceを設定することができます。
+  次の値が許可されます。
+
+  dotted     
+  dashed     
+  solid     
+  double     
+  groove     
+  ridge     
+  inset     
+  outset     
+  none     
+  hidden     
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+th, td {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Table With Dotted Borders</h2>
+
+<p>Use the CSS border-style property to set the style of the borders.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
+
+<!---->
