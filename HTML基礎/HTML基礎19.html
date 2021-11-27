@@ -1,0 +1,309 @@
+
+
+<!--https://www.w3schools.com/-->
+
+
+<!--HTMLレスポンシブWebデザイン
+    レスポンシブウェブデザインとは、すべてのデバイスで見栄えのするウェブページを作成することです。
+    レスポンシブウェブデザインは、さまざまな画面サイズとビューポートに合わせて自動的に調整されます。
+
+    レスポンシブウェブデザインとは、HTMLとCSSを使用して、ウェブサイトのサイズを自動的に変更、
+    非表示、縮小、拡大して、すべてのデバイス（デスクトップ、タブレット、電話）で見栄えを良くすることです。
+-->
+
+<!--ビューポートの設定
+    レスポンシブWebサイトを作成するには、<meta> すべてのWebページに次のタグを追加します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Setting the Viewport</h2>
+<p>This example does not really do anything, other than showing you how to add the viewport meta element.</p>
+
+</body>
+</html>
+
+
+<!--レスポンシブ画像
+    レスポンシブ画像は、ブラウザのサイズに合わせて適切に拡大縮小される画像です。
+    widthプロパティの使用
+    CSSwidthプロパティが100％に設定されている場合、画像はレスポンシブになり、スケールアップおよびスケールダウンします。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect.</p>
+
+<img src="mouse.jpg" style="width:15%;">
+
+</body>
+</html>
+
+
+<!--max-widthプロパティの使用
+    上記の例では、画像を元のサイズより大きく拡大できることに注意してください。
+    多くの場合、より良い解決策は、max-width代わりにプロパティを使用することです。
+
+    場合max-widthプロパティを100％に設定され、画像はそれが持っている場合はスケールダウンが、
+    元のサイズよりも大きくなるようにスケールアップすることはありません。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Responsive Image</h2>
+<p>"max-width:100%" prevents the image from getting bigger than its original size. However, if you make the browser window smaller, the image will still scale down.</p>
+<p>Resize the browser window to see the effect.</p>
+
+<img src="mouse.jpg" style="max-width:100%;height:auto;">
+
+</body>
+</html>
+
+
+<!--
+    ブラウザの幅に応じて異なる画像を表示する
+    HTML<picture>要素を使用すると、ブラウザのウィンドウサイズごとに異なる画像を定義できます。
+    ブラウザウィンドウのサイズを変更して、幅に応じて下の画像がどのように変化するかを確認します。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>Show Different Images Depending on Browser Width</h2>
+<p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+<picture>
+  <source srcset="dog.jpg" media="(max-width: 600px)">
+  <source srcset="mouse.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+
+</body>
+</html>
+
+
+<!--レスポンシブテキストサイズ
+    テキストサイズは、「ビューポート幅」を意味する「vw」単位で設定できます。
+    そうすれば、テキストサイズはブラウザウィンドウのサイズに従います。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h1 style="font-size:10vw;">Responsive Text</h1>
+
+<p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+<p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+
+<p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+</body>
+</html>
+
+
+<!--メディアクエリ
+    テキストや画像のサイズ変更に加えて、レスポンシブWebページでメディアクエリを使用することも一般的です。
+    メディアクエリを使用すると、ブラウザのサイズごとにまったく異なるスタイルを定義できます。
+
+    例：ブラウザウィンドウのサイズを変更して、下の3つのdiv要素が大きな画面では水平に表示され、
+    小さな画面では垂直に積み重ねられることを確認します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  background-color: #2196F3;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  background-color: #f1f1f1;
+  padding: 20px;
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+.right {
+  background-color: #04AA6D;
+  padding: 20px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Media Queries</h2>
+<p>Resize the browser window.</p>
+
+<p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+
+<div class="left">
+  <p>Left Menu</p>
+</div>
+
+<div class="main">
+  <p>Main Content</p>
+</div>
+
+<div class="right">
+  <p>Right Content</p>
+</div>
+
+</body>
+</html>
+
+
+<!--レスポンシブウェブデザイン-フレームワーク
+    W3.CSSは、デフォルトでデスクトップ、タブレット、およびモバイルデザインをサポートする最新のCSSフレームワークです。
+    W3.CSSは、同様のCSSフレームワークよりも小さく高速です。
+    W3.CSSは、Bootstrapの高品質な代替手段となるように設計されています。
+    W3.CSSは、jQueryやその他のJavaScriptライブラリから独立するように設計されています。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-container w3-green">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+<div class="w3-row-padding">
+  <div class="w3-third">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="w3-third">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!--ブートストラップ
+    もう1つの人気のあるCSSフレームワークはBootstrapです。Bootstrapは、
+    HTML、CSS、jQueryを使用してレスポンシブWebページを作成します。
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>My First Bootstrap Page</h1>
+    <p>Resize this responsive page to see the effect!</p> 
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
