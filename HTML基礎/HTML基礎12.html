@@ -91,12 +91,251 @@ table, th, td {
 </html>
 
 
-<!---->
+<!--HTMLテーブルの行の高さ
+    特定の行の高さを設定するstyle には、テーブルの行要素に属性を追加します
+    特定の行の高さを設定するstyle には、テーブルの行要素に属性を追加します。
+-->
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
 
-<!---->
+<h2>Set the height of the second row to 200 pixels</h2>
 
-<!---->
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
 
-<!---->
+</body>
+</html>
 
-<!---->
+<!--HTMLテーブルヘッダー
+    テーブルヘッダーはth要素で定義され、各th要素はテーブルセルを表します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Headers</h2>
+
+<p>Use the TH element to define table headers.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<!--垂直テーブルヘッダー
+    最初の列をテーブルヘッダーとして使用するには、各行の最初のセルをth要素として定義します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Vertical Table Headers</h2>
+
+<p>The first column becomes table headers if you set the first table cell in each table row to a TH element:</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>  
+    <td>50</td>
+    <td>94</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--テーブルヘッダーを揃える
+    デフォルトでは、テーブルヘッダーは太字で中央に配置されています。
+    テーブルヘッダーを左揃えにするには、CSStext-alignプロパティを使用します
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Left-align Headers</h2>
+
+<p>To left-align the table headers, use the CSS text-align property.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+<!--複数列のヘッダー
+    2つ以上の列にまたがるヘッダーを持つことができます。
+    これを行うcolspanには、<th>要素の属性を使用します 。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>A header that spans two columns</h2>
+
+<p>Use the colspan attribute to have a header span over multiple columns.</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</body>
+</html>
+
+<!--テーブルキャプション
+    テーブル全体の見出しとして機能するキャプションを追加できます。
+    テーブルにキャプションを追加するには、次の<caption>タグを使用します。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
