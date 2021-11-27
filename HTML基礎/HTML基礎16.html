@@ -1,0 +1,299 @@
+
+<!--https://www.w3schools.com/-->
+
+<!--HTMLのid属性
+    HTMLid属性は、HTML要素の一意のIDを指定するために使用されます。
+    HTMLドキュメントに同じIDを持つ複数の要素を含めることはできません。
+-->
+<!--id属性の使用
+    このid属性は、HTML要素の一意のIDを指定します。id 属性の値は、HTMLドキュメント内で一意である必要があります。
+    このid属性は、スタイルシート内の特定のスタイル宣言を指すために使用されます。
+    また、特定のIDを持つ要素にアクセスして操作するためにJavaScriptによって使用されます。
+    idの構文は次のとおりです。ハッシュ文字（＃）を記述し、その後にID名を続けます。
+    次に、中括弧{}内でCSSプロパティを定義します。
+    次の例では<h1>、ID名「myHeader」を指す要素があります。この<h1> 要素は#myHeader 、
+    headセクションのスタイル定義に従ってスタイル設定されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+</style>
+</head>
+<body>
+
+<h2>The id Attribute</h2>
+<p>Use CSS to style an element with the id "myHeader":</p>
+
+<h1 id="myHeader">My Header</h1>
+
+</body>
+</html>
+
+
+<!--クラスとIDの違い
+    クラス名は複数のHTML要素で使用できますが、ID名はページ内の1つのHTML要素でのみ使用する必要があります。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+</style>
+</head>
+<body>
+
+<h2>Difference Between Class and ID</h2>
+<p>A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page:</p>
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+</body>
+</html>
+
+<!--IDとリンクを含むHTMLブックマーク
+    HTMLブックマークは、読者がWebページの特定の部分にジャンプできるようにするために使用されます。
+    ブックマークは、ページが非常に長い場合に役立ちます。
+    ブックマークを使用するには、最初にブックマークを作成してから、リンクを追加する必要があります。
+    次に、リンクをクリックすると、ページがブックマークのある場所にスクロールします。
+-->
+
+<!--例
+    まず、次のid属性でブックマークを作成します。
+    <h2 id="C4">Chapter 4</h2>
+    次に、同じページ内からブックマークへのリンクを追加します（「第4章にジャンプ」）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
+</body>
+</html>
+
+
+<!--JavaScriptでid属性を使用する
+    このid属性は、JavaScriptで使用して、その特定の要素に対していくつかのタスクを実行することもできます。
+    JavaScriptは、次のgetElementById()メソッドを使用して特定のIDを持つ要素にアクセスできます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>JavaScript can access an element with a specified id by using the getElementById() method:</p>
+
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+
+</body>
+</html>
+
+
+<!--章のまとめ
+    このid属性は、HTML要素の一意のIDを指定するために使用されます
+    id 属性の値は、HTMLドキュメント内で一意である必要があります
+    このid 属性は、CSSおよびJavaScriptが特定の要素のスタイルを設定/選択するために使用されます
+    id 属性の値では大文字と小文字が区別されます
+    このid 属性は、HTMLブックマークの作成にも使用されます
+    JavaScriptは、getElementById() メソッドを使用して特定のIDを持つ要素にアクセスできます
+-->
+
+<!--HTMLIframe構文
+    HTML<iframe>タグは、インラインフレームを指定します。
+    インラインフレームは、現在のHTMLドキュメント内に別のドキュメントを埋め込むために使用されます。
+    構文
+    <iframe src="url" title="description"></iframe>
+-->
+<!--Iframe-高さと幅を設定する
+    heightandwidth属性を使用して、iframeのサイズを指定します。
+    高さと幅はデフォルトでピクセル単位で指定されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Iframes</h2>
+<p>You can use the height and width attributes to specify the size of the iframe:</p>
+
+<iframe src="sample1.html" height="200" width="300" title="Iframe Example"></iframe>
+
+</body>
+</html>
+
+
+<!--
+    または、style属性を追加して、CSSheightとwidth プロパティを使用することもできます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Iframes</h2>
+<p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+
+<iframe src="sample1.html" style="height:200px;width:300px" title="Iframe Example"></iframe>
+
+</body>
+</html>
+
+
+<!--Iframe-境界線を削除します
+    デフォルトでは、iframeの周囲に境界線があります。
+    界線を削除するには、style属性を追加し、CSSborderプロパティを使用し ます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Remove the Iframe Border</h2>
+<p>To remove the default border of the iframe, use CSS:</p>
+
+<iframe src="sample1.html" style="border:none;" title="Iframe Example"></iframe>
+
+</body>
+</html>
+
+
+<!--CSSを使用すると、iframeの境界線のサイズ、スタイル、色を変更することもできます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Custom Iframe Border</h2>
+<p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+<iframe src="sample1.html" style="border:2px solid red;" title="Iframe Example"></iframe>
+
+</body>
+</html>
+
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
