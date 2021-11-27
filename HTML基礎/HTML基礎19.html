@@ -284,26 +284,317 @@
 </html>
 
 
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
+<!--セマンティック要素とは何ですか？
+    セマンティック要素は、ブラウザと開発者の両方にその意味を明確に説明します。
+
+    非セマンティック要素の例：<div>および<span>-その内容については何も伝えません。
+    例セマンティック要素：<form>、<table>、とは<article>-明らかにその内容を定義します。
+    多くのWebサイトには、ナビゲーション、ヘッダー、
+    およびフッターを示す<div id = "nav"> <div class = "header"> <div id = "footer">のようなHTMLコードが含まれています。
+
+    HTMLには、Webページのさまざまな部分を定義するために使用できるいくつかのセマンティック要素があります
+    <記事>
+    <脇>
+    <詳細>
+    <図>
+    <図>
+    <フッター>
+    <ヘッダー>
+    <メイン>
+    <マーク>
+    <nav>
+    <セクション>
+    <概要>
+    <時間>
+-->
+<!--HTML <セクション>要素
+    この<section>要素は、ドキュメント内のセクションを定義します。
+    W3CのHTMLドキュメントによると、「セクションはコンテンツのテーマ別グループであり、通常は見出しが付いています。」
+
+<section>要素を使用できる場所の例：
+
+チャプター
+序章
+ニュースアイテム
+連絡先
+Webページは通常、紹介、コンテンツ、連絡先情報のセクションに分割できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+
+</body>
+</html>
+
+
+<!--HTML <article>要素
+    この<article>要素は、独立した自己完結型のコンテンツを指定します。
+    記事はそれ自体で意味があり、Webサイトの他の部分から独立して配布できる必要があります。
+    <article>要素を使用できる場所の例：
+
+    フォーラムの投稿
+    ブログ投稿
+    ユーザーコメント
+    製品カード
+    新聞記事
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The article element</h1>
+
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+</article>
+
+<article>
+  <h2>Microsoft Edge</h2>
+  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+
+</body>
+</html>
+
+
+<!--CSSを使用して<article>要素のスタイルを設定します。-->
+    <!DOCTYPE html>
+<html>
+<head>
+<style>
+.all-browsers {
+  margin: 0;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+.all-browsers > h1, .browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+</style>
+</head>
+<body>
+
+<article class="all-browsers">
+  <h1>Most Popular Browsers</h1>
+  <article class="browser">
+    <h2>Google Chrome</h2>
+    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+  </article>
+  <article class="browser">
+    <h2>Mozilla Firefox</h2>
+    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+  </article>
+  <article class="browser">
+    <h2>Microsoft Edge</h2>
+    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+  </article>
+</article>
+
+</body>
+</html>
+
+
+<!--<section>またはその逆に<article>をネストしますか？
+    
+    この<article> 要素は、独立した自己完結型のコンテンツを指定します。
+
+    この<section>要素は、ドキュメントのセクションを定義します。
+    定義を使用して、これらの要素をネストする方法を決定できますか？いいえ、できません！
+
+    だから、あなたが持つHTMLページを見つけるでしょう<section>含む要素<article>の要素を、
+    そして<article>含む要素<section>の要素を。
+
+
+HTML <header>要素
+    この<header>要素は、紹介コンテンツまたは一連のナビゲーションリンクのコンテナを表します。
+
+    <header>要素は、典型的には、含まれています。
+
+    1つ以上の見出し要素（<h1>-<h6>）
+    ロゴまたはアイコン
+    著者情報
+    注：<header> 1つのHTMLドキュメントに複数の要素を含めることができます。
+        しかし、<header>内に配置することができない<footer>、<address>または別の<header>要素。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+
+</body>
+</html>
+
+
+<!--HTML <フッター>要素
+    この<footer>要素は、ドキュメントまたはセクションのフッターを定義します。
+
+    <footer>要素は、典型的には、含まれています。
+    著者情報
+    著作権情報
+    連絡先
+    サイトマップ
+    トップに戻るリンク
+    関連文書
+    <footer>1つのドキュメントに複数の要素を含めることができます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<footer>
+  <p>Author: Hege Refsnes</p>
+  <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+</body>
+</html>
+
+
+<!--HTML <nav>要素
+    この<nav>要素は、一連のナビゲーションリンクを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/jquery/">jQuery</a>
+</nav>
+
+</body>
+</html>
+
+
+<!--HTML <aside>要素
+    <aside>要素は、それが（サイドバーなど）に配置されている内容とは別に、いくつかのコンテンツを定義します。
+    <aside>コンテンツは、間接的に、周囲のコンテンツに関連しなければなりません。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+</body>
+</html>
+
+
+<!--CSSを使用して<aside>要素のスタイルを設定します。-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+</body>
+</html>
+
+<!--HTMLの<figure>および<figcaption>要素
+    <figure>などのイラスト、図表、写真、コードリスト、などのタグを指定し、自己完結型コンテンツ、
+    <figcaption>タグのキャプションを定義する<figure>要素。<figcaption>要素は、
+    要素の最初の子または最後の子として配置できます<figure>。
+    この<img>要素は、実際の画像/イラストを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Places to Visit</h2>
+
+<p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+
+<figure>
+  <img src="dog.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+
+</body>
+</html>
+
+
+<!--なぜ意味要素？
+    W3Cによると、「セマンティックWebを使用すると、アプリケーション、企業、
+    コミュニティ間でデータを共有して再利用できます。」
+-->
+<!--HTMLのセマンティック要素
+    以下は、HTMLのセマンティック要素の一部のリストです。
+    
+    Tag	Description
+<article>	Defines independent, self-contained content
+<aside>	Defines content aside from the page content
+<details>	Defines additional details that the user can view or hide
+<figcaption>	Defines a caption for a <figure> element
+<figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>	Defines a footer for a document or section
+<header>	Specifies a header for a document or section
+<main>	Specifies the main content of a document
+<mark>	Defines marked/highlighted text
+<nav>	Defines navigation links
+<section>	Defines a section in a document
+<summary>	Defines a visible heading for a <details> element
+<time>	Defines a date/time
+-->
+
 
