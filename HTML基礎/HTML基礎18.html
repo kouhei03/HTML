@@ -1,3 +1,256 @@
 
 
 <!--https://www.w3schools.com/-->
+
+
+
+<!--HTMLファイルパス
+    ファイルパスは、Webサイトのフォルダー構造内のファイルの場所を示します。    
+-->
+<!--ファイルパスの例
+    ファイルパス        	説明
+<img src = "picture.jpg">	「picture.jpg」ファイルは、現在のページと同じフォルダにあります
+<img src = "images / picture.jpg">	「picture.jpg」ファイルは、現在のフォルダーのimagesフォルダーにあります。
+<img src = "/ images / picture.jpg">	「picture.jpg」ファイルは、現在のWebのルートにあるimagesフォルダーにあります。
+<img src = "../ picture.jpg">	「picture.jpg」ファイルは、現在のフォルダーから1レベル上のフォルダーにあります。
+-->
+<!--
+    ファイルパスは、Webサイトのフォルダー構造内のファイルの場所を示します。
+    ファイルパスは、次のように外部ファイルにリンクするときに使用されます。
+    ウェブページ
+    画像
+    スタイルシート
+    JavaScript
+
+-->
+<!--絶対ファイルパス
+    絶対ファイルパスは、ファイルへの完全なURLです。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using a Full URL File Path</h2>
+<img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+
+</body>
+</html>
+
+
+<!--相対ファイルパス
+    相対ファイルパスは、現在のページに関連するファイルを指します。
+    次の例では、ファイルパスは、現在のWebのルートにあるimagesフォルダー内のファイルを指しています。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using a Relative File Path</h2>
+<img src="/images/picture.jpg" alt="Mountain" style="width:300px">
+
+</body>
+</html>
+
+
+<!--HTML-ヘッド要素
+    HTMLの<head>要素は、以下の要素のコンテナです： <title>、<style>、 <meta>、<link>、<script>、と<base>。
+-->
+<!--HTMLの<head>要素
+    この<head>要素はメタデータ（データに関するデータ）のコンテナーであり、<html>タグとタグの間に配置され<body>ます。
+    HTMLメタデータは、HTMLドキュメントに関するデータです。メタデータは表示されません。
+    メタデータは通常、ドキュメントのタイトル、文字セット、スタイル、スクリプト、およびその他のメタ情報を定義します。
+-->
+<!--
+    この<title>要素は、ドキュメントのタイトルを定義します。タイトルはテキストのみである必要があり、ブラウザのタイトルバーまたはページのタブに表示されます。
+    この<title>要素はHTMLドキュメントに必要です！
+    ページタイトルの内容は、検索エンジン最適化（SEO）にとって非常に重要です！ページタイトルは、検索エンジンアルゴリズムによって使用され、検索結果にページを一覧表示するときの順序を決定します。
+
+<title>要素：
+        ブラウザのツールバーでタイトルを定義します
+    お気に入りに追加されたときにページのタイトルを提供します
+    検索エンジンの結果にページのタイトルを表示します
+    したがって、タイトルをできるだけ正確で意味のあるものにするようにしてください。
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Meaningful Page Title</title>
+</head>
+<body>
+
+<p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+
+</body>
+</html>
+
+
+<!--HTMLの<style>要素
+    この<style>要素は、単一のHTMLページのスタイル情報を定義するために使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <style>
+    body {background-color: powderblue;}
+    h1 {color: red;}
+    p {color: blue;}
+  </style>
+</head>  
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+  
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A Meaningful Page Title</title>
+</head>
+<body>
+
+<p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+
+</body>
+</html>
+
+
+<!--HTMLの<link>要素
+    この<link>要素は、現在のドキュメントと外部リソースの間の関係を定義します。 
+    タグは、ほとんどの場合、外部スタイルシートへのリンクに使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+  
+</body>
+</html>
+
+
+<!--HTMLの<meta>要素
+    この<meta>要素は通常、文字セット、ページの説明、キーワード、ドキュメントの作成者、
+    およびビューポート設定を指定するために使用されます。
+    メタデータはページに表示されませんが、ブラウザー（コンテンツの表示方法またはページの再読み込み方法）、
+    検索エンジン（キーワード）、およびその他のWebサービスによって使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+</head>
+<body>
+
+<p>All meta information goes inside the head section.</p>
+
+</body>
+</html>
+
+
+<!--ビューポートの設定
+    ビューポートは、Webページのユーザーの表示領域です。デバイスによって異なります。
+    携帯電話の方がコンピューターの画面よりも小さくなります。
+    <meta>すべてのWebページに次の要素を含める必要があります。
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    これにより、ページのサイズと拡大縮小を制御する方法がブラウザに指示されます。
+    width=device-width部分は、（デバイスに依存して変化する）デバイスの画面幅に追従するページの幅を設定します。
+    initial-scale=1.0一部は、ページが最初のブラウザによってロードされた初期のズームレベルを設定します。
+    次に、ビューポートメタタグのないWebページと、ビューポートメタタグのある同じWebページの例を示します。
+-->
+
+<!--HTMLの<script>要素
+    この<script>要素は、クライアント側のJavaScriptを定義するために使用されます。
+    次のJavaScriptは「HelloJavaScript！」と書いています。id = "demo"のHTML要素に：
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  }
+  </script>
+</head>
+<body>
+
+<h1>My Web Page</h1>
+<p id="demo">A Paragraph</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
+
+
+<!--HTMLの<base>要素
+    この<base>要素は、ページ内のすべての相対URLのベースURLまたはターゲット、あるいはその両方を指定します。
+    <base>タグは、HREFまたはターゲット属性存在、あるいはその両方を持っている必要があります。
+    <base> ドキュメントには1つの要素しか存在できません。
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="https://www.w3schools.com/" target="_blank">
+</head>
+<body>
+
+<h1>The base element</h1>
+
+<p><img src="images/stickman.gif" width="24" height="39" alt="Stickman"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".</p>
+
+<p><a href="tags/tag_base.asp">HTML base tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+
+</body>
+</html>
+
+
+<!--章のまとめ
+    <head>要素は、メタデータのコンテナである（データについてのデータ）
+    <head>要素が間に配置されている<html>タグと<body>タグ
+    <title>要素が必要であり、それは、ドキュメントのタイトルを定義しています
+    この<style>要素は、単一のドキュメントのスタイル情報を定義するために使用されます
+    <link> タグは、ほとんどの場合、外部スタイルシートへのリンクに使用されています
+    この<meta>要素は通常、文字セット、ページの説明、キーワード、ドキュメントの作成者、およびビューポート設定を指定するために使用されます
+    この<script>要素は、クライアント側のJavaScriptを定義するために使用されます
+    この<base>要素は、ページ内のすべての相対URLのベースURLまたはターゲット、あるいはその両方を指定します
+
+-->
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
+
+
