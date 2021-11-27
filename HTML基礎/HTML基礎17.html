@@ -1,0 +1,161 @@
+
+<!--https://www.w3schools.com/-->
+
+<!--HTML JavaScript
+    JavaScriptは、HTMLページをより動的でインタラクティブにします
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html>
+
+<!--HTMLの<script>タグ
+    HTML<script>タグは、クライアント側スクリプト（JavaScript）を定義するために使用されます。
+    <script>要素は、いずれかのスクリプトステートメントが含まれている、またはそれは介して外部スクリプトファイルを指すsrc属性。
+    JavaScriptの一般的な用途は、画像の操作、フォームの検証、コンテンツの動的な変更です。
+    HTML要素を選択するために、JavaScriptはほとんどの場合document.getElementById()メソッドを使用し ます。
+    このJavaScriptの例では、「HelloJavaScript！」と記述しています。id = "demo"のHTML要素に：
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Use JavaScript to Change Text</h2>
+<p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script> 
+
+</body>
+</html>
+
+
+<!--JavaScriptの味
+    JavaScriptでできることの例を次に示します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+
+</body>
+</html>
+
+
+<!--
+    JavaScriptはスタイルを変更できます：
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.fontSize = "25px"; 
+  document.getElementById("demo").style.color = "red";
+  document.getElementById("demo").style.backgroundColor = "yellow";        
+}
+</script>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html>
+
+
+<!--JavaScriptは属性を変更できます：-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "mouse.jpg"
+  } else {
+    pic = "dog.jpg"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+</body>
+</html>
+
+<!--HTMLの<noscript>タグ
+    HTML<noscript>タグは、ブラウザでスクリプトを無効にしているユーザー、
+    またはスクリプトをサポートしていないブラウザを使用しているユーザーに表示される代替コンテンツを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+ 
+</body>
+</html>
+
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->

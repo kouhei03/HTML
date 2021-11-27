@@ -276,8 +276,34 @@ function displayResult() {
 </html>
 
 
-<!---->
-<!---->
+<!--Iframe-リンクのターゲット
+    リンクのターゲットフレームとしてiframeを使用できます。
+    targetリンクの属性を参照しなければならないnameのiframeの属性：
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Iframe - Target for a Link</h2>
+
+<iframe src="sample1.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+</body>
+</html>
+
+
+<!--章のまとめ
+    HTML<iframe>タグはインラインフレームを指定します
+    src 属性は、埋め込みにページのURLを定義します
+    常に title属性を含める（スクリーンリーダーの場合）
+    属性のiframeのサイズを指定しますheightwidth
+    border:none;iframeの周囲の境界線を削除するために使用します
+
+-->
 <!---->
 <!---->
 <!---->
