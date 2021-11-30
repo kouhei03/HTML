@@ -1,3 +1,291 @@
 
 
 <!--    https://www.w3schools.com/-->
+
+<!---->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+</body>
+</html>
+
+<!--
+    HTML<canvas>要素は、JavaScriptを介してオンザフライでグラフィックを描画するために使用されます。
+    この<canvas>要素は、グラフィックのコンテナにすぎません。
+    実際にグラフィックを描画するには、JavaScriptを使用する必要があります。
+    Canvasには、パス、ボックス、円、テキストを描画したり、画像を追加したりするためのいくつかの方法があります。
+-->
+
+<!--
+    キャンバスは、HTMLページ上の長方形の領域です。
+    デフォルトでは、キャンバスには境界線もコンテンツもありません。
+    マークアップは次のようになります。
+
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    注：キャンバスのサイズを定義するには、常にid属性（スクリプトで参照される）と
+    awidthおよびheight属性を指定してください。境界線を追加するには、style属性を使用します。
+
+    基本的な空のキャンバスの例を次に示します。
+-->
+
+<!--JavaScriptを追加する
+    長方形のキャンバス領域を作成した後、描画を行うためにJavaScriptを追加する必要があります。
+    ここではいくつかの例を示します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(200,100);
+ctx.stroke();
+</script>
+
+</body>
+</html>
+
+
+<!--円を描く-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+
+</body>
+</html>
+
+<!--テキストを描く-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World",10,50);
+</script>
+
+</body>
+</html>
+
+
+<!--ストロークテキスト-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World",10,50);
+</script>
+
+</body>
+</html>
+
+
+<!--線形グラデーションを描く-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+</body>
+</html>
+
+
+<!--円形のグラデーションを描く-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10,10,150,80);
+</script>
+
+</body>
+</html>
+
+<!--画像を描く-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Image to use:</p>
+<img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+
+<p>Canvas to fill:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("scream");
+  ctx.drawImage(img,10,10);
+}
+</script>
+
+</body>
+</html>
+
+<!--    SVGとは何ですか？
+    SVGはScalableVectorGraphicsの略です
+    SVGは、Webのグラフィックを定義するために使用されます
+    SVGはW3C勧告です
+    HTMLの<svg>要素
+    HTML<svg>要素はSVGグラフィックのコンテナです。
+
+    SVGには、パス、ボックス、円、テキスト、およびグラフィックイメージを描画するためのいくつかの方法があります。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40"
+  stroke="green" stroke-width="4" fill="yellow" />
+Sorry, your browser does not support inline SVG.
+</svg>
+ 
+</body>
+</html>
+
+
+<!--SVG長方形-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="400" height="100">
+  <rect width="400" height="100" 
+  style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+Sorry, your browser does not support inline SVG.
+</svg>
+ 
+</body>
+</html>
+
+
+<!--SVGの角丸長方形-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
+
+
+<!--SVGスター-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg width="300" height="200">
+  <polygon points="100,10 40,198 190,78 10,78 160,198"
+  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+Sorry, your browser does not support inline SVG.
+</svg>
+ 
+</body>
+</html>
+
+
+<!--SVGロゴ-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<svg height="130" width="500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"
+      style="stop-color:rgb(255,255,0);stop-opacity:1" />
+      <stop offset="100%"
+      style="stop-color:rgb(255,0,0);stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana"
+  x="50" y="86">SVG</text>
+Sorry, your browser does not support inline SVG.
+</svg>
+
+</body>
+</html>
+
+
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+
