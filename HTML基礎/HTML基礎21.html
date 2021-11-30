@@ -1,0 +1,284 @@
+
+
+<!--https://www.w3schools.com/-->
+
+<!--HTMLの<form>要素
+    HTML<form>要素には、次のフォーム要素を1つ以上含めることができます。
+
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+-->
+<!--<input>要素
+    最もよく使用されるフォーム要素の1つは<input>要素です。
+    <input>要素はに応じて、いくつかの方法で表示することができますtype 属性。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The input Element</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+<!--<label>要素
+    この<label>要素は、いくつかのフォーム要素のラベルを定義します。
+    この<label>要素は、ユーザーが入力要素にフォーカスするとスクリーンリーダーがラベルを読み上げるため、スクリーンリーダーのユーザーにとって便利です。
+    この<label>要素は、非常に小さな領域（ラジオボタンやチェックボックスなど）をクリックするのが難しいユーザーにも役立ちます。ユーザーが<label>要素内のテキストをクリックすると、ラジオボタン/チェックボックスが切り替わります。
+    for属性<label>タグはに等しくなければならないidの属性<input> 、それらを一緒にバインドする要素。
+-->
+
+<!--<select>要素
+    この<select>要素は、ドロップダウンリストを定義します
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The select Element</h2>
+
+<p>The select element defines a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+
+<!--
+    <option>要素が選択できるオプションを定義します。
+    デフォルトでは、ドロップダウンリストの最初の項目が選択されています。
+    事前に選択されたオプションを定義するには、selected属性をオプションに追加します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Pre-selected Option</h2>
+
+<p>You can preselect an option with the selected attribute:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+<!--目に見える値：
+    size属性を使用して、表示される値の数を指定します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Visible Option Values</h2>
+
+<p>Use the size attribute to specify the number of visible values.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="3">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+
+<!--複数の選択を許可する：
+    このmultiple属性を使用して、ユーザーが複数の値を選択できるようにします。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Allow Multiple Selections</h2>
+
+<p>Use the multiple attribute to allow the user to select more than one value.</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select id="cars" name="cars" size="4" multiple>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select><br><br>
+  <input type="submit">
+</form>
+
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+</body>
+</html>
+
+
+<!--<textarea>要素
+    この<textarea>要素は、複数行の入力フィールド（テキスト領域）を定義します。
+        このrows属性は、テキスト領域に表示される行数を指定します。
+        このcols属性は、テキスト領域の表示幅を指定します。
+-->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Textarea</h2>
+<p>The textarea element defines a multi-line input field.</p>
+
+<form action="/action_page.php">
+  <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+  <br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+
+
+<!--<button>要素
+    この<button>要素は、クリック可能なボタンを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The button Element</h2>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+</body>
+</html>
+
+
+<!--<fieldset>要素と<legend>要素
+    この<fieldset>要素は、関連データをフォームにグループ化するために使用されます。
+    <legend>要素はのキャプション定義 <fieldset> 要素。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Grouping Form Data with Fieldset</h2>
+
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+</body>
+</html>
+
+
+<!--<datalist>要素
+    <datalist>要素がための事前定義されたオプションのリストを指定する<input>要素を。
+    ユーザーがデータを入力すると、事前定義されたオプションのドロップダウンリストが表示されます。
+    要素のlist属性は、<input>要素の属性を参照する必要 idがあり<datalist>ます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The datalist Element</h2>
+
+<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari prior version 12.1.</p>
+
+</body>
+</html>
+
+<!--<output>要素
+    この<output>要素は、計算の結果を表します（スクリプトによって実行されるようなもの）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The output Element</h2>
+<p>The output element represents the result of a calculation.</p>
+
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The output element is not supported in Edge prior version 13.</p>
+
+</body>
+</html>
+
+<!---->
+
+<!---->
+
+<!---->
+
+
+
