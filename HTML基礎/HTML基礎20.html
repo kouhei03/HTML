@@ -1,0 +1,370 @@
+
+<!--https://www.w3schools.com/-->
+
+<!--HTMLフォーム
+    HTMLフォームは、ユーザー入力を収集するために使用されます。
+    ユーザー入力は、ほとんどの場合、処理のためにサーバーに送信されます。
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+<!--
+    <form>要素
+HTML<form>要素は、ユーザー入力用のHTMLフォームを作成するために使用されます。
+
+<form>
+.
+form elements
+.
+</form>
+この<form>要素は、テキストフィールド、チェックボックス、ラジオボタン、送信ボタンなど、さまざまなタイプの入力要素のコンテナです。
+
+この章では、さまざまなフォーム要素すべてについて説明します： HTMLフォーム要素。
+
+<input>要素
+HTML<input>要素は、最もよく使用されるフォーム要素です。
+
+<input>要素はに応じて、さまざまな方法で表示することができますtype 属性。
+
+ここではいくつかの例を示します。
+
+タイプ	説明
+<input type = "text">	1行のテキスト入力フィールドを表示します
+<input type = "radio">	ラジオボタンを表示します（多くの選択肢から1つを選択するため）
+<input type = "checkbox">	チェックボックスを表示します（多くの選択肢から0個以上を選択するため）
+<input type = "submit">	送信ボタンを表示します（フォームを送信するため）
+<input type = "button">	クリック可能なボタンを表示します
+この章では、さまざまな入力タイプすべてについて説明します： HTML入力タイプ。
+
+-->
+
+
+<!--テキストフィールド
+    <input type="text">テキスト入力のための単一行入力フィールドを定義します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Text input fields</h2>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe">
+</form>
+
+<p>Note that the form itself is not visible.</p>
+
+<p>Also note that the default width of text input fields is 20 characters.</p>
+
+</body>
+</html>
+
+
+<!--
+    <label>上記の例の要素の使用に注意してください。
+<label>タグは、多くのフォーム要素のラベルを定義します。
+この<label>要素は、ユーザーが入力要素にフォーカスするとスクリーンリーダーが
+ラベルを読み上げるため、スクリーンリーダーのユーザーにとって便利です。
+この<label>要素は、非常に小さな領域（ラジオボタンやチェックボックスなど）をクリックするのが
+難しいユーザーにも役立ちます。ユーザーが<label>要素内のテキストをクリックすると、
+ラジオボタン/チェックボックスが切り替わります。
+for属性<label>タグはに等しくなければならないidの属性<input> 、それらを一緒にバインドする要素。
+-->
+
+<!--label要素で関連付けを行うと、ラベル部分のクリックでその部品を選択できるようになります。
+この設定は、特にラジオボタンやチェックボックスの選択時に役立ちます。
+
+関連付けを行っていないラジオボタンの場合
+丸い部分をクリックしないと選択できません。
+選択肢1 選択肢2 選択肢3
+
+関連付けを行ったラジオボタンの場合
+ラベル部分のクリックで選択できます。
+選択肢1 選択肢2 選択肢3-->
+
+
+
+<!--ラジオボタン
+    <input type="radio">ラジオボタンを定義します。
+   ラジオボタンを使用すると、ユーザーは限られた数の選択肢から1つを選択できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Radio Buttons</h2>
+
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form> 
+
+</body>
+</html>
+
+
+
+<!--チェックボックス
+    <input type="checkbox">定義する]チェックボックスを。
+    チェックボックスを使用すると、ユーザーは限られた数の選択肢から
+    0個以上のオプションを選択できます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Checkboxes</h2>
+<p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+<form action="/action_page.php">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+
+
+<!--送信ボタン
+    <input type="submit">フォームハンドラにフォームデータを送信するボタンを定義します。
+フォームハンドラーは通常、入力データを処理するためのスクリプトを含むサーバー上のファイルです。
+フォームハンドラーは、フォームのaction 属性で指定されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+<!--<input>の名前属性
+    各入力フィールドには、name送信する属性が必要であることに注意してください。
+    場合はname属性が省略され、入力フィールドの値は、すべてでは送信されません。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The name Attribute</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" value="John"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+
+</body>
+</html>
+
+<!--アクション属性
+     このaction属性は、フォームが送信されたときに実行されるアクションを定義します。
+    通常、フォームデータは、ユーザーが送信ボタンをクリックしたときにサーバー上のファイルに送信されます。
+    以下の例では、フォームデータは「action_page.php」というファイルに送信されます。
+    このファイルには、フォームデータを処理するサーバー側スクリプトが含まれています。
+    
+-->
+
+<!--送信時に、フォームデータを「action_page.php」に送信します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
+
+
+
+<!--ターゲット属性
+このtarget属性は、フォームの送信後に受信した応答を表示する場所を指定します。
+
+target属性には、次のいずれかの値を持つことができます。
+
+Value	Description
+_blank	The response is displayed in a new window or tab
+_self	The response is displayed in the current window
+_parent	The response is displayed in the parent frame
+_top	The response is displayed in the full body of the window
+framename	The response is displayed in a named iframe
+デフォルト値は_self、応答が現在のウィンドウで開くことを意味します。
+-->
+
+<!--ここで、送信された結果が新しいブラウザタブで開きます。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The form target attribute</h2>
+
+<p>When submitting this form, the result will be opened in a new browser tab:</p>
+
+<form action="/action_page.php" target="_blank">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+
+
+<!--メソッド属性
+    このmethod属性は、フォームデータを送信するときに使用されるHTTPメソッドを指定します。
+    フォームデータは、URL変数（を使用method="get"）またはHTTP POSTトランザクション（を使用method="post"）として送信できます。
+    フォームデータを送信するときのデフォルトのHTTPメソッドはGETです。 
+-->
+
+<!--この例では、フォームデータを送信するときにGETメソッドを使用します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the GET method:</p>
+
+<form action="/action_page.php" target="_blank" method="get">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that the form values is visible in the address bar of the new browser tab.</p>
+
+</body>
+</html>
+
+
+<!--この例では、フォームデータを送信するときにPOSTメソッドを使用します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The method Attribute</h2>
+
+<p>This form will be submitted using the POST method:</p>
+
+<form action="/action_page.php" target="_blank" method="post">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.</p>
+
+</body>
+</html>
+
+
+<!--GETに関する注意：
+    名前と値のペアで、フォームデータをURLに追加します
+    GETを使用して機密データを送信しないでください。（送信されたフォームデータはURLに表示されます！）
+    URLの長さには制限があります（2048文字）
+    ユーザーが結果をブックマークしたいフォーム送信に役立ちます
+    GETは、Googleのクエリ文字列などの安全でないデータに適しています
+-->
+
+<!--POSTに関する注記：
+    HTTPリクエストの本文内にフォームデータを追加します（送信されたフォームデータはURLに表示されません）
+    POSTにはサイズ制限がなく、大量のデータを送信するために使用できます。
+POSTを使用したフォーム送信はブックマークできません
+-->
+
+<!-- オートコンプリート属性
+    このautocomplete属性は、フォームのオートコンプリートをオンにするかオフにするかを指定します。
+    オートコンプリートがオンの場合、ブラウザはユーザーが以前に入力した値に基づいて値を自動的に完了します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The form autocomplete attribute</h1>
+
+<p>Fill in and submit the form, then reload the page, start to fill in the form again - and see how autocomplete works.</p>
+
+<p>Then, try to set autocomplete to "off".</p>
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+</body>
+</html>
+
+<!--Novalidate属性
+    novalidate属性は論理属性です。
+    存在する場合、送信時にフォームデータ（入力）を検証しないように指定します。
+    form要素のnovalidate属性は、フォームの入力内容の検証を無効にするかどうかを指定する属性である。
+    例えば、入力必須の入力欄が空白でないかどうかの検証を、無効にできる。
+    novalidate属性は、HTML5にて新たに導入された属性である。
+-->
