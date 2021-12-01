@@ -1,0 +1,300 @@
+
+<!--    https://www.w3schools.com/-->
+
+<!--使い方
+    このcontrols属性は、再生、一時停止、音量などのビデオコントロールを追加します。
+    常に含めるのは良いアイデアですwidthし、height属性。高さと幅が設定されていない場合、
+    ビデオの読み込み中にページがちらつくことがあります。
+    この<source>要素を使用すると、ブラウザが選択できる代替ビデオファイルを指定できます。
+    ブラウザは最初に認識された形式を使用します。
+    タグ<video>と</video>タグの間のテキストは、<video>要素をサポートしていないブラウザでのみ表示されます。
+-->
+
+<!--HTMLの<video>要素
+    HTMLでビデオを表示するには、次の<video>要素を使用します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+
+
+<!--HTML <ビデオ>自動再生
+    ビデオを自動的に開始するには、次のautoplay属性を使用します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" autoplay>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+
+<!--
+    muted後 autoplayに追加して、ビデオの自動再生を開始します（ただしミュートします）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="320" height="240" autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
+
+
+<!--HTMLビデオ-メソッド、プロパティ、およびイベント
+    HTML DOMは、<video>要素のメソッド、プロパティ、およびイベントを定義します。
+    これにより、動画の読み込み、再生、一時停止、および再生時間と音量の設定が可能になります。
+    ビデオの再生が開始されたとき、一時停止されたときなどに通知できるDOMイベントもあります。
+-->
+<!DOCTYPE html> 
+<html> 
+<body> 
+
+<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Video courtesy of <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.</p>
+
+</body> 
+</html>
+
+
+<!--HTMLオーディオ
+    HTML<audio>要素は、Webページでオーディオファイルを再生するために使用されます。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
+
+
+<!--このcontrols属性は、再生、一時停止、音量などのオーディオコントロールを追加します。
+この<source>要素を使用すると、ブラウザが選択できる代替オーディオファイルを指定できます。ブラウザは最初に認識された形式を使用します。
+タグ<audio>と</audio>タグの間のテキストは、<audio>要素をサポートしていないブラウザでのみ表示されます。-->
+
+<!--HTML <オーディオ>自動再生
+    ーディオファイルを自動的に開始するには、次のautoplay属性を使用します。-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
+
+
+<!--
+    muted後 autoplayに追加して、オーディオファイルの再生を自動的に開始します（ただしミュートします）
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls autoplay muted>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</body>
+</html>
+
+
+<!--<object>要素
+    この<object>要素はすべてのブラウザでサポートされています。
+    この<object>要素は、HTMLドキュメント内の埋め込みオブジェクトを定義します。
+    プラグイン（Javaアプレット、PDFリーダー、Flash Playerなど）をWebページに
+    埋め込むように設計されていますが、HTMLをHTMLに含めるために使用することもできます。
+
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<object width="100%" height="500px" data="snippet.html"></object>
+ 
+</body>
+</html>
+
+
+<!--または、必要に応じて画像：-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<object data="mouse.jpeg"></object>
+ 
+</body>
+</html>
+
+<!--HTMLでYouTubeビデオを再生する
+    Webページでビデオを再生するには、次の手順を実行します。
+
+    ビデオをYouTubeにアップロードする
+    ビデオIDをメモします
+    <iframe>Webページで要素を定義する
+    ましょうsrc属性ポイントは、動画のURL
+    widthおよび height属性を使用して、プレーヤーの次元を指定します
+    URLに他のパラメータを追加します（以下を参照）
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/watch?v=lDmMcXCHNpo&list=RDlDmMcXCHNpo&start_radio=1">
+</iframe>
+
+</body>
+</html>
+
+
+<!--ouTube自動再生+ミュート
+    autoplay=1YouTubeのURLに追加することで、ユーザーがページにアクセスしたときに動画の再生を自動的に開始させることができます。
+    ただし、ビデオを自動的に開始することは、訪問者にとって煩わしいことです。
+    mute=1後 autoplay=1に追加すると、ビデオの自動再生が開始されます（ただしミュートされます）。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+</iframe>
+
+</body>
+</html>
+
+
+<!--YouTubeループ
+    追加loop=1して、ビデオを永久にループさせます。
+    値0（デフォルト）：ビデオは1回だけ再生されます。
+    値1：ビデオは（永久に）ループします。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+</body>
+</html>
+
+
+<!--YouTubeコントロール
+    controls=0ビデオプレーヤーにコントロールを表示しないように追加します。
+    値0：プレーヤーコントロールは表示されません。
+    値1（デフォルト）：プレーヤーはディスプレイを制御します
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+</iframe>
+
+</body>
+</html>
+
+
+<!--HTMLジオロケーションの使用
+    HTML Geolocation APIは、ユーザーの地理的位置を取得するために使用されます。
+    これはプライバシーを危険にさらす可能性があるため、ユーザーが承認しない限り、そのポジションは利用できません。
+    このgetCurrentPosition()メソッドは、ユーザーの位置を返すために使用されます。
+    以下の例は、ユーザーの位置の緯度と経度を返します。
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
